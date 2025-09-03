@@ -1,44 +1,55 @@
+using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using MottuGestor.Application.UseCases;
+using MottuGestor.Domain.Interfaces;
+using MottuGestor.Infrastructure.Context;
+using MottuGestor.Infrastructure.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(x =>
+{
+    x.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = builder.Configuration["Swagger:Title"] ?? "GestMottu API",
+        Description = "API RESTful para gestão de motos com Clean Architecture e DDD",
+        Contact = new OpenApiContact
+        {
+            Name = "Equipe GestMottu",
+            Email = "contato@mottu.com.br"
+        }
+    });
 
-var app = builder.Build();
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    if (File.Exists(xmlPath))
+    {
+        x.IncludeXmlComments(xmlPath);
+    }
+
+
+    builder.Services.AddDbContext<MottuGestorContext>(options =>
+        options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+    builder.Services.AddScoped<IMotoRepository, MotoRepository>();
+    builder.Services.AddScoped<IPatioRepository, PatioRepository>();
+    builder.Services.AddScoped<MotoUseCase>();
+
+    var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
+    if (app.Environment.IsDevelopment())
     {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
 
-app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+    app.UseHttpsRedirection();
+    app.MapControllers();
+    app.Run();
+});

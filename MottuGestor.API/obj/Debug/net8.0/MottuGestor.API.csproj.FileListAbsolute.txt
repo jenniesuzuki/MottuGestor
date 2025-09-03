@@ -226,3 +226,6 @@ C:\Users\jenni\RiderProjects\MottuGestor\MottuGestor.API\obj\Debug\net8.0\refint
 C:\Users\jenni\RiderProjects\MottuGestor\MottuGestor.API\obj\Debug\net8.0\MottuGestor.API.pdb
 C:\Users\jenni\RiderProjects\MottuGestor\MottuGestor.API\obj\Debug\net8.0\MottuGestor.API.genruntimeconfig.cache
 C:\Users\jenni\RiderProjects\MottuGestor\MottuGestor.API\obj\Debug\net8.0\ref\MottuGestor.API.dll
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.API\obj\Debug\net8.0\MottuGestor.API.dll
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.API\obj\Debug\net8.0\refint\MottuGestor.API.dll
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.API\obj\Debug\net8.0\MottuGestor.API.pdb

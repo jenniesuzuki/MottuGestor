@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj": {}
+    "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj": {
+    "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj",
+        "projectUniqueName": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj",
         "projectName": "MottuGestor.API",
-        "projectPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj",
-        "packagesPath": "C:\\Users\\jenni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.API\\obj\\",
+        "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.API\\MottuGestor.API.csproj",
+        "packagesPath": "C:\\Users\\labsfiap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jenni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\labsfiap\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj": {
-                "projectPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj"
+              "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj": {
+                "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj"
+              },
+              "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Infrastructure\\MottuGestor.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Infrastructure\\MottuGestor.Infrastructure.csproj"
               }
             }
           }
@@ -65,6 +69,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.23.90, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -89,24 +97,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj": {
+    "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj",
+        "projectUniqueName": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj",
         "projectName": "MottuGestor.Application",
-        "projectPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj",
-        "packagesPath": "C:\\Users\\jenni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Application\\obj\\",
+        "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Application\\MottuGestor.Application.csproj",
+        "packagesPath": "C:\\Users\\labsfiap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jenni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\labsfiap\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -115,14 +123,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {
-                "projectPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj"
+              "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {
+                "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj"
               }
             }
           }
@@ -163,24 +172,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {
+    "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
         "projectName": "MottuGestor.Domain",
-        "projectPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
-        "packagesPath": "C:\\Users\\jenni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jenni\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\obj\\",
+        "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
+        "packagesPath": "C:\\Users\\labsfiap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jenni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\labsfiap\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -189,6 +198,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -233,7 +243,96 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Infrastructure\\MottuGestor.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Infrastructure\\MottuGestor.Infrastructure.csproj",
+        "projectName": "MottuGestor.Infrastructure",
+        "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Infrastructure\\MottuGestor.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\labsfiap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\labsfiap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {
+                "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.23.90, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

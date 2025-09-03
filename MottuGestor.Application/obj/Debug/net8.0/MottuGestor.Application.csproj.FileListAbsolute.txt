@@ -1,0 +1,6 @@
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.Application\obj\Debug\net8.0\MottuGestor.Application.csproj.AssemblyReference.cache
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.Application\obj\Debug\net8.0\MottuGestor.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.Application\obj\Debug\net8.0\MottuGestor.Application.AssemblyInfoInputs.cache
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.Application\obj\Debug\net8.0\MottuGestor.Application.AssemblyInfo.cs
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.Application\obj\Debug\net8.0\MottuGestor.Application.csproj.CoreCompileInputs.cache
+C:\Users\labsfiap\RiderProjects\MottuGestor\MottuGestor.Application\obj\Debug\net8.0\MottuGestor.Application.sourcelink.json

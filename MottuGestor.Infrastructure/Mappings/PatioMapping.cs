@@ -1,6 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using MottuGestor.Domain.Entities;
+
 namespace MottuGestor.Infrastructure.Mappings;
 
-public class PatioMapping
+public class PatioMapping : IEntityTypeConfiguration<Patio>
 {
-    
+    public void Configure(EntityTypeBuilder<Patio> b)
+    {
+        b.HasKey(x => x.PatioId);
+        b.Property(x => x.Nome).IsRequired().HasMaxLength(120);
+
+        b.HasMany(typeof(Moto))
+            .WithOne()
+            .OnDelete(DeleteBehavior.Cascade);
+
+        b.Navigation("_motos").UsePropertyAccessMode(PropertyAccessMode.Field);
+    }
 }

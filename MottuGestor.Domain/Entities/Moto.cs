@@ -6,46 +6,70 @@ namespace MottuGestor.Domain.Entities;
 
 public class Moto
 {
-    public Guid Id { get; private set; } = Guid.NewGuid();
+    public Guid MotoId { get; private set; }
     public Placa Placa { get; private set; }
     public string Modelo { get; private set; }
     public string Marca { get; private set; }
-    public string RfidTag { get; private set; }
+    public RfidTag RfidTag { get; private set; }
     public int Ano { get; private set; }
-    public DateTime DataCadastro { get; private set; } = DateTime.UtcNow;
-    public string? Problema { get; private set; }
-    public StatusMoto Status { get; private set; } = StatusMoto.Disponivel;
+    public DateTime DataCadastro { get; private set; }
+    public string Problema { get; private set; }
+    public string Localizacao { get; private set; }
+    public StatusMoto Status { get; private set; }
 
-
-    public Guid? PatioId { get; private set; }
-
-
-    public Moto(string rfidTag, Placa placa, string modelo, string marca, int ano)
+    public Moto(Guid motoId, Placa placa, string modelo, string marca, RfidTag rfidTag, int ano, DateTime dataCadastro, string problema, string localizacao, StatusMoto status)
     {
-        if (string.IsNullOrWhiteSpace(modelo)) throw new ArgumentException("Modelo obrigatório");
-        if (string.IsNullOrWhiteSpace(marca)) throw new ArgumentException("Marca obrigatória");
-        if (ano < 1990) throw new ArgumentOutOfRangeException(nameof(ano));
-
-
-        RfidTag = rfidTag;
+        MotoId = motoId;
         Placa = placa;
-        Modelo = modelo.Trim();
-        Marca = marca.Trim();
+        Modelo = modelo;
+        Marca = marca;
+        RfidTag = rfidTag;
         Ano = ano;
+        DataCadastro = dataCadastro;
+        Problema = problema;
+        Localizacao = localizacao;
+        Status = status;
     }
+    
+    private Moto() {}
 
-
-    private Moto() { } // EF
-
-
-    public void MarcarProblema(string? descricao)
+    public Moto(Placa motoId, string modelo, string marca, RfidTag rfid, int rfidTag)
     {
-        Problema = string.IsNullOrWhiteSpace(descricao) ? null : descricao.Trim();
-        if (Problema is not null) Status = StatusMoto.EmManutencao;
-        else if (Status == StatusMoto.EmManutencao) Status = StatusMoto.Disponivel;
+        throw new NotImplementedException();
     }
 
 
-    internal void SetPatio(Guid patioId) { PatioId = patioId; Status = StatusMoto.EmUso; }
-    internal void RemoverDoPatio() { PatioId = null; if (Status == StatusMoto.EmUso) Status = StatusMoto.Disponivel; }
+    // public Moto()
+    // {
+    //     DataCadastro = DateTime.UtcNow;
+    //     Status = StatusMoto.Disponivel;
+    // }
+    //
+    // // Métodos para alterar campos
+    // public void AtualizarLocalizacao(string novaLocalizacao)
+    // {
+    //     Localizacao = novaLocalizacao;
+    // }
+    //
+    // public void AtualizarProblema(string novoProblema)
+    // {
+    //     Problema = novoProblema;
+    // }
+    //
+    // public void AlterarStatus(StatusMoto novoStatus)
+    // {
+    //     Status = novoStatus;
+    // }
+    //
+    // public void AtualizarDados(string rfidTag, string placa, string modelo, string marca, int ano, string problema, string localizacao)
+    // {
+    //     RfidTag = rfidTag;
+    //     Placa = placa;
+    //     Modelo = modelo;
+    //     Marca = marca;
+    //     Ano = ano;
+    //     Problema = problema;
+    //     Localizacao = localizacao;
+    // }
+    
 }
