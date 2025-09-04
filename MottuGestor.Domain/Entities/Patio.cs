@@ -11,6 +11,7 @@ public class Patio
     public IReadOnlyCollection<Moto> Motos => _motos.AsReadOnly();
 
     private Patio() {} // EF
+
     public Patio(string nome)
     {
         PatioId = Guid.NewGuid();

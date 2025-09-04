@@ -1,4 +1,5 @@
 using MottuGestor.Domain.Entities;
+using MottuGestor.Domain.ValueObjects;
 
 namespace MottuGestor.Domain.Interfaces;
 

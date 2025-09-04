@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MottuGestor.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e2c553310b6ea45d25193961d1ee3def4d08c5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a507370e5bbbec88676fd35cd0cfe42a14aaec94")]
 [assembly: System.Reflection.AssemblyProductAttribute("MottuGestor.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MottuGestor.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

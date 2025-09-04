@@ -12,6 +12,11 @@ public class RfidTag : IEquatable<RfidTag>
         if (v.Length is < 8 or > 32) throw new ArgumentException("RFID inválido.");
         Value = v;
     }
+
+    public RfidTag(RfidTag reqRfid)
+    {
+    }
+
     public override string ToString() => Value;
     public bool Equals(RfidTag? other) => other is not null && Value == other.Value;
     public override bool Equals(object? obj) => obj is RfidTag r && Equals(r);

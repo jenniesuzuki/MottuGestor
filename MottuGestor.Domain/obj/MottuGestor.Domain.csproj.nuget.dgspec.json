@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {}
+    "C:\\dotnet\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {
+    "C:\\dotnet\\MottuGestor.Domain\\MottuGestor.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
+        "projectUniqueName": "C:\\dotnet\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
         "projectName": "MottuGestor.Domain",
-        "projectPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
+        "projectPath": "C:\\dotnet\\MottuGestor.Domain\\MottuGestor.Domain.csproj",
         "packagesPath": "C:\\Users\\labsfiap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\labsfiap\\RiderProjects\\MottuGestor\\MottuGestor.Domain\\obj\\",
+        "outputPath": "C:\\dotnet\\MottuGestor.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

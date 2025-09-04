@@ -7,6 +7,9 @@ namespace MottuGestor.Domain.Entities;
 public class Moto
 {
     public Guid MotoId { get; private set; }
+    
+    public Guid PatioId { get; private set; }      // FK
+    public Patio Patio { get; private set; } = null!; // Navegação
     public Placa Placa { get; private set; }
     public string Modelo { get; private set; }
     public string Marca { get; private set; }
